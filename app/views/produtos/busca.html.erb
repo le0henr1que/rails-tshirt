@@ -6,11 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <% if flash[:notice] %>
-        <div class="alert alert-success" role="alert">
-            <%= flash[:notice] %>
-        </div>
-    <% end %>
     <table class="table">
         <thead>
             <tr>
@@ -23,7 +18,7 @@
         </thead>
         <tbody>
 
-            <% @produtos_por_nome.each do |produto| %>
+            <% @produtos.each do |produto| %>
                 <tr>
                     <td><%= produto.nome %></td>
                     <td><%= produto.descricao %></td>

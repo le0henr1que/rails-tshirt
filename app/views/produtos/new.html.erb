@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,13 @@
     <title>Novo Produto</title>
 </head>
 <body>
-    <%= form_for Produto.new do |f| %>
+    <% @produto.errors.full_messages.each do |message| %>
+        <div class="alert alert-danger" role="alert">
+            <%= message %>
+        </div>
+    <% end %>
+
+    <%= form_for @produto do |f| %>
         <div class="form-group">
             <%= f.label :nome %>
             <%= f.text_field :nome, class: "form-control"  %>

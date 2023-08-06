@@ -13,7 +13,7 @@ gem "sprockets-rails"
 gem "sqlite3", "~> 1.4"
 gem 'twitter-bootstrap-rails'
 gem 'jquery-rails'
-
+gem 'rails-i18n', '~> 7.0.0'
 gem 'turbolinks'
 
 # Use the Puma web server [https://github.com/puma/puma]
